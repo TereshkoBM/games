@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-tac-toe</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h3 class="name" data-i18n="name">5 камней</h3>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link game-active" id="renju" data-i18n="renju"
+                >Рэндзю: 15x15</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="gomoku" data-i18n="gomoku"
+                >Гомоку: 19x19</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tictactoe" data-i18n="tictactoe"
+                >Крестики-нолики</a
+              >
+            </li>            
+            <li class="nav-item">              
+              <a class="nav-link" id="reset" data-i18n="reset">Cброс</a>
+            </li>          
+            <li class="nav-item">
+              <a class="nav-link" id="save" data-i18n="save">Cохранить</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="load" data-i18n="load">Загрузить</a>
+            </li>
+            <li class="nav-item">              
+              <a class="nav-link" id="results" data-i18n="results">Результаты</a>
+            </li>   
+          </ul>
+        </nav>
+        <div class="switch-lng">
+          <span class="switch-lng_en" id="switch-lng_en">En </span> /
+          <span class="switch-lng_ru switch-lng-active" id="switch-lng_ru">
+            Ru</span
+          >
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1><span data-i18n="gamer">Игрок :</span> <span id="move">X</span></h1>
+      <div id="main"></div>
+      <div id="modal-results">
+        <div id="overlay"></div>
+        <div id="modal-window">
+          <div id="content-results">Results</div>
+          <div id="btn-close" data-i18n="btnClose">Закрыть окно</div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-data">
+          <p class="copyright">©</p>
+          <p class="year">2022</p>
+          <a class="github-username" href="https://github.com/tereshkobm"
+            >github</a
+          >
+        </div>
+        <a class="rss-logo" href="https://rs.school/js-stage0/"></a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
